@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>CAlculator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <h2>Calculator</h2>
+        <div id="main-div">
+            <input id="no1" type="number" placeholder="Number 1" /><br/><br/>
+            <input id="no2" type="number" placeholder="Number 2" />
+            <p>Operations to be performed</p>
+            <select id="choice">
+                <option disabled selected>Null</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select><br/>
+            <button onclick="calculate()" type="button">Calculate</button>
+        </div>
+        <script>
+            function calculate(){
+            let no1 = document.querySelector("#no1").value;
+            let no2 = document.querySelector("#no2").value;
+            let choice = document.getElementById("#choice").value;
+            
+            console.log(choice);
+            
+           
+                switch(choice){
+                    case '+' : alert('worked!');
+                    break;
+                }
+        
+            
+            let result = 0;
+            }
+
+        </script>
+    </body>
+</html>
